@@ -113,7 +113,7 @@ const pauseAudio = () =>{
 }
 
 const nextSong = () => {
-  if (!loop) {
+  if (loop) {
     if (index == songsList.length - 1) {
       index = 0;
     } else {
